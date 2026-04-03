@@ -1,0 +1,47 @@
+# Development Aliases
+# Source this from ~/.bashrc: source ~/.bash_aliases
+
+# Navigation
+alias ..="cd .."
+alias ...="cd ../.."
+alias ~="cd ~"
+
+# Listing
+alias ll="ls -lah --color=auto"
+alias la="ls -A --color=auto"
+
+# Safety
+alias rm="rm -i"
+alias cp="cp -i"
+alias mv="mv -i"
+
+# Git
+alias gs="git status"
+alias ga="git add"
+alias gc="git commit"
+alias gp="git push"
+alias gl="git log --oneline --graph --decorate -20"
+alias gd="git diff"
+alias gb="git branch"
+alias gco="git checkout"
+
+# Python
+alias py="python3"
+alias pip="pip3"
+alias venv="python3 -m venv venv && source venv/bin/activate"
+alias activate="source venv/bin/activate"
+
+# Docker
+alias dc="docker compose"
+alias dps="docker ps"
+alias dimg="docker images"
+
+# System
+alias ports="ss -tuln"
+alias myip="curl -s ifconfig.me"
+alias update="sudo apt update && sudo apt upgrade -y"
+alias clean="sudo apt autoremove -y && sudo apt autoclean"
+
+# Quick serve
+alias serve="python3 -m http.server 8000"
+alias json="python3 -m json.tool"
